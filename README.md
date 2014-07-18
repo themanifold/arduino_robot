@@ -5,7 +5,7 @@ Simple Arduino program for a robot with two wheels and a front mounted ultra son
 motion
 
 Todo
-====:
+=============
 - Dynamic calculation of turning circles and stopping distances 
  + integrate simple physics model of floor
 - Mapping of space
