@@ -1,6 +1,12 @@
 // Writen by Clement Law (https://github.com/themanifold/arduino_robot) 
 // with copyrights attributed 
 
+// TODO:
+// - Dynamic calculation of turning circles and stopping distances 
+//   + integrate simple physics model of floor
+// - Mapping of space
+//   + populate a simple 2D grid
+
 #include <AFMotor.h>
 
 // create direct current motors on ports 4(R), 1(L)
@@ -97,8 +103,8 @@ void stop_move() {
 // Attributed to http://bit.ly/1wDOVSP
 
 long distanceAway() {
-// The following trigPin/echoPin cycle is used to determine the
-// distance of the nearest object by bouncing soundwaves off of it.
+  // The following trigPin/echoPin cycle is used to determine the
+  // distance of the nearest object by bouncing soundwaves off of it.
   pinMode(trigPin, OUTPUT);
   pinMode(echoPin, INPUT);
 
