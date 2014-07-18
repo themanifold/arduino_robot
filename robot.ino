@@ -1,15 +1,21 @@
-// Writen by Clement Law (https://github.com/themanifold/arduino_robot) 
+// Written by Clement Law (https://github.com/themanifold/arduino_robot) 
 // with copyrights attributed 
+
+// DESCRIPTION:
+// Simple Arduino program for a robot with two wheels and a front
+// mounted ultra sonic sensor to avoid collision while in constant
+// motion
 
 // TODO:
 // - Dynamic calculation of turning circles and stopping distances 
 //   + integrate simple physics model of floor
 // - Mapping of space
 //   + populate a simple 2D grid
+// - Incorporate other sensors (infrared, light etc)
 
 #include <AFMotor.h>
 
-// create direct current motors on ports 4(R), 1(L)
+// create direct current motors on Arduino ports 4(R), 1(L)
 AF_DCMotor motorR(4);
 AF_DCMotor motorL(1);
 
